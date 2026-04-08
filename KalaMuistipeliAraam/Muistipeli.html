@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muistipeli – Kala-Oppi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="AraaminPeli.css">
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" class="back-link">← Etusivu</a>
+        <h1>Muistipeli</h1>
+    </header>
+
+    <main>
+        <div class="info-bar">
+            <span>Siirrot: <strong id="moves">0</strong></span>
+            <button id="restart-btn">Uusi peli</button>
+            <span>Parit: <strong id="pairs">0</strong> / 8</span>
+        </div>
+
+        <div id="board"></div>
+
+        <div id="win-msg" class="hidden">
+            🎣 Hienoa! Löysit kaikki parit! 🎣
+        </div>
+    </main>
+
+    <script src="AraaminPeli.js"></script>
+</body>
+</html>
