@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kala-Oppi – Kalateemaiset opetuspelit</title>
+    <!-- Google Fontit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Rye&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- tyylit -->
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <!-- HEADERI -->
+    <header class="site-header">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
+            <a href="index.html" class="brand-title text-decoration-none"> Kala-Oppi</a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Avaa valikko">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="mainNav" class="collapse nav-dropdown">
+                <a href="index.html">Etusivu</a>
+                <a href="#pelit">Pelit</a>
+                <a href="#tietopankki">Tietopankki</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow-1">
+
+        <!-- kuva -->
+        <section class="hero-section">
+            <div class="hero-fish-wrap mx-auto">
+                <img src="../kala-oppi/kuva/etusivukuva.png" alt="Kala">
+            </div>
+            <p class="hero-tagline">
+                Helppoja kalateemaisia opetuspelejä lapsille ja nuorille – opi kaloista leikkien!
+            </p>
+        </section>
+
+        <!-- PELIT -->
+        <section class="games-section" id="pelit">
+            <div class="container">
+                <h2 class="section-title">Valitse peli</h2>
+                <div class="games-grid">
+
+                    <!-- peli 1 -->
+                    <a href="AraaminPeli/AraaminPeli.html" class="game-card">
+                        <div class="game-card-img"></div>
+                        <span class="game-card-label">Muistipeli</span>
+                    </a>
+
+                    <!-- peli 2 -->
+                    <a href="#" class="game-card">
+                        <div class="game-card-img"></div>
+                        <span class="game-card-label">Matikkapeli</span>
+                    </a>
+
+                    <!-- peli 3 -->
+                    <a href="#" class="game-card">
+                        <div class="game-card-img"></div>
+                        <span class="game-card-label">Kalojen tunnistuspeli</span>
+                    </a>
+
+                    <!-- peli 4 -->
+                    <a href="#" class="game-card">
+                        <div class="game-card-img"></div>
+                        <span class="game-card-label">Elinympäristö</span>
+                    </a>
+
+                    <!-- peli 5 -->
+                    <a href="#" class="game-card">
+                        <div class="game-card-img"></div>
+                        <span class="game-card-label">Kalasanapeli</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- TIETOPANKKI -->
+        <section class="tietopankki-section" id="tietopankki">
+            <div class="container">
+                <h2 class="section-title">Tietopankki</h2>
+<div class="row g-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="tietopankki-card">Info 1</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="tietopankki-card">Info 2</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="tietopankki-card">Info 3</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-6">
+                        <div class="tietopankki-card">Info 4</div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-6">
+                        <div class="tietopankki-card">Info 5</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOTERI -->
+    <footer class="site-footer">
+        <p class="footer-brand">Kala-Oppi</p>
+        <p> 2026 Kala-Oppi. Tehnyt Ratakalat.</p>
+    </footer>
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

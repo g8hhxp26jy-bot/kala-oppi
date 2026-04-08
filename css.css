@@ -1,0 +1,176 @@
+:root { --gold-light: #F5DFA0; }
+
+body {
+    background-color: #02540d;
+    color: #E8C84A;
+    font-family: Georgia, serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    font-family: 'Rye', cursive;
+    color: #E8C84A;
+}
+
+.site-header {
+    background-color: #0B3D2E;
+    border-bottom: 2px solid #E8C84A;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.site-header .container { position: relative; }
+
+.brand-title {
+    font-family: 'Rye', cursive;
+    color: #E8C84A;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-toggler { border-color: #E8C84A; background: transparent; }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23E8C84A' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-dropdown {
+    position: absolute;
+    top: calc(100% + 1rem);
+    right: 0;
+    background-color: #0B3D2E;
+    border: 2px solid #E8C84A;
+    border-radius: 0.5rem;
+    min-width: 180px;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+}
+
+.nav-dropdown.show { display: flex; }
+
+.site-header nav a {
+    color: #F5DFA0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid rgba(232,200,74,0.2);
+}
+
+.site-header nav a:last-child { border-bottom: none; }
+.site-header nav a:hover { background-color: rgba(232,200,74,0.1); color: #E8C84A; }
+
+.hero-section { padding: 3rem 1rem 2rem; text-align: center; }
+
+.hero-fish-wrap {
+    display: inline-block;
+    width: min(480px, 90%);
+    background-color: #0B3D2E;
+    border: 3px solid #E8C84A;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.hero-fish-wrap img { width: 100%; display: block; }
+
+.hero-tagline {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    color: #F5DFA0;
+    max-width: 520px;
+    margin: 1.2rem auto 0;
+    font-style: italic;
+}
+
+.section-title {
+    color: #E8C84A;
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.games-section { padding: 3rem 1rem; }
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.25rem;
+}
+
+@media (max-width: 991px) { .games-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 575px) { .games-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.game-card {
+    background-color: #0B3D2E;
+    border: 2px solid #E8C84A;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.game-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.45); }
+
+.game-card-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    background-color: #03420a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+
+.game-card-img img { width: 100%; height: 100%; object-fit: cover; }
+
+.game-card-label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #E8C84A;
+    text-align: center;
+    padding: 0.6rem 0.4rem;
+    background-color: #0B3D2E;
+}
+
+.fish-divider {
+    text-align: center;
+    color: #E8C84A;
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.5;
+    margin: 0.5rem 0 2rem;
+}
+
+.tietopankki-section { padding: 3rem 1rem 4rem; background-color: #0B3D2E; }
+
+.tietopankki-card {
+    background-color: #013808;
+    border: 1.5px solid rgba(232,200,74,0.35);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.tietopankki-card:hover { border-color: #E8C84A; }
+.tietopankki-card h3 { font-size: 1.05rem; margin-bottom: 0.6rem; }
+.tietopankki-card p { font-size: 0.9rem; color: #F5DFA0; margin: 0; line-height: 1.6; }
+.tietopankki-card .topic-icon { font-size: 2.2rem; margin-bottom: 0.75rem; display: block; }
+
+.site-footer {
+    background-color: #0B3D2E;
+    border-top: 2px solid #E8C84A;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.site-footer p { font-size: 0.8rem; color: #F5DFA0; margin: 0; opacity: 0.75; }
+.footer-brand { font-family: 'Rye', cursive; color: #E8C84A; font-size: 1rem; margin-bottom: 0.4rem; }
