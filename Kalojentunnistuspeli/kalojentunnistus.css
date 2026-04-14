@@ -1,6 +1,59 @@
 body {
+    font-family: Georgia,Times, serif;
     background-color: #02540d;
-}
-h2 {
     color: #E8C84A;
 }
+h1 {
+    color: #E8C84A;
+}
+
+#fish-image {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.choice-btn {
+    width: 120px;
+    padding: 10px;
+    margin: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #E8C84A;
+    background-color: #02540d;
+    color: #E8C84A;
+}
+ .choice-btn:hover {
+    background-color: #036b10;
+ }
+
+ #feedback {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color:  #E8C84A;
+ }
+
+ #next-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #E8C84A;
+    color: #02540d;
+    border: none;
+    font-weight: bold;
+ }
+
+ #next-btn:hover {
+    background-color: #d4b340;
+ }
+
+ #score {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #E8C84A;
+ }
