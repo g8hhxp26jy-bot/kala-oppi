@@ -1,23 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Georgia,Times, serif;
+    text-align: center;
     background-color: #02540d;
     color: #E8C84A;
+    padding: 20px;
 }
 h1 {
     color: #E8C84A;
+    font-size: clamp(1.2.rem, 4vw, 2rem);
+    margin-bottom: 20px;
+}
+
+#fish-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
 }
 
 #fish-image {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 400px;
+    height: auto;
     object-fit: contain;
 }
 
+#choices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
 .choice-btn {
-    width: 120px;
-    padding: 10px;
-    margin: 8px;
-    font-size: 16px;
+    flex: 1 1 auto;
+    min-width: 100px;
+    max-width: 150px;
+    padding: 12px;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
     cursor: pointer;
     border-radius: 8px;
     border: 2px solid #E8C84A;
@@ -29,22 +56,24 @@ h1 {
  }
 
  #feedback {
-    font-size: 20px;
+    font-size: clamp(1rem, 3vw, 1.3rem);
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
     color:  #E8C84A;
  }
 
  #next-btn {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
+    margin-top: 15px;
+    padding: 12px 24px;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
     cursor: pointer;
     border-radius: 8px;
     background-color: #E8C84A;
     color: #02540d;
     border: none;
     font-weight: bold;
+    width: 100%;
+    max-width: 400px;
  }
 
  #next-btn:hover {
@@ -52,7 +81,7 @@ h1 {
  }
 
  #score {
-    font-size: 24px;
+    font-size: clamp(1.2.rem, 4vw, 1.5rem);
     font-weight: bold;
     margin-top: 20px;
     color: #E8C84A;
