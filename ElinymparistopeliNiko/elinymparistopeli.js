@@ -1,15 +1,15 @@
 var kalat = [
     { nimi: "Hauki", elinymparisto: "Ruovikkoinen lahti" },
     { nimi: "Taimen", elinymparisto: "Virtaava joki" },
-    { nimi: "Silakka", elinymparisto: "Itameren avovesi" },
-    { nimi: "Made", elinymparisto: "Syva jarvi" }
+    { nimi: "Silakka", elinymparisto: "Itämeren avovesi" },
+    { nimi: "Made", elinymparisto: "Syvä järvi" }
 ];
 
 var elinymparistot = [
     "Ruovikkoinen lahti",
     "Virtaava joki",
-    "Itameren avovesi",
-    "Syva jarvi"
+    "Itämeren avovesi",
+    "Syvä järvi"
 ];
 
 var kalatDiv = document.getElementById("kalat");
