@@ -76,7 +76,7 @@ function piirra() {
                 tila.textContent = "Oikein!";
                 valittuKala = null;
             } else {
-                tila.textContent = "Vaarin, yrita uudelleen.";
+                tila.textContent = "Väärin, yritä uudelleen.";
             }
 
             pisteetSpan.textContent = pisteet;
