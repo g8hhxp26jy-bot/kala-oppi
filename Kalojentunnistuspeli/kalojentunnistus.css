@@ -80,9 +80,60 @@ h1 {
     background-color: #d4b340;
  }
 
+ #end-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+ }
+
+ #play-again-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #E8C84A;
+    color: #02540d;
+    cursor: pointer;
+    font-weight: bold;
+ }
+
+ #play-again-btn:hover {
+    background-color: #d4b340;
+ }
+
+ #main-menu-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #E8C84A;
+    color: #02540d;
+    cursor: pointer;
+    font-weight: bold;
+ }
+
+ #main-menu-btn:hover{
+    background-color: #d4b340;
+ }
+
  #score {
     font-size: clamp(1.2.rem, 4vw, 1.5rem);
     font-weight: bold;
     margin-top: 20px;
     color: #E8C84A;
+ }
+
+ @media (min-width: 600px) {
+    #fish-image {
+        max-width: 500px;
+    }
+
+    #choices {
+        max-width: 500px;
+    }
+
+    #next-btn {
+        max-width: 500px;
+    }
  }

@@ -96,7 +96,26 @@ nextBtn.addEventListener('click', () => {
         feedback.textContent = '';
         nextBtn.style.display = 'none';
         scoreDisplay.textContent = `Peli ohi! Pisteet: ${score} / ${questions.length}`;
+
+        document.getElementById('end-buttons').style.display = 'flex';
     }
 });
 
 loadQuestion();
+
+
+document.getElementById('play-again-btn').addEventListener('click', () => {
+    index = 0;
+    score = 0;
+    answered = false;
+    fishImage.style.display = 'block';
+    document.getElementById('choices').style.display = 'flex';
+    document.getElementById('end-buttons').style.display = 'none';
+    scoreDisplay.textContent = '';
+    loadQuestion();
+});
+
+document.getElementById('main-menu-btn').addEventListener('click', () => {
+    window.location.href = '../index.html';
+});
+
