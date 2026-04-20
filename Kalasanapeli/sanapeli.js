@@ -92,3 +92,7 @@ function restartGame() {
 }
 
 document.getElementById("restartBtn").addEventListener("click", restartGame);
+
+document.getElementById('main-menu-btn').addEventListener('click', () => {
+    window.location.href = '../index.html';
+});
