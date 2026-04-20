@@ -15,7 +15,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    margin: 20px 0;
+    margin: 44px 0 20px;
 }
 
 #kalat,
