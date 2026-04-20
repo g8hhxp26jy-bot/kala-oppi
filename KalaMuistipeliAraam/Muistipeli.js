@@ -93,3 +93,6 @@ function reset() {
 document.getElementById('restart-btn').addEventListener('click', buildBoard);
 
 buildBoard();
+document.getElementById('main-menu-btn').addEventListener('click', () => {
+    window.location.href = '../index.html';
+});
