@@ -159,6 +159,16 @@ h1, h2, h3 {
     height: 100%;
 }
 
+.tietopankki-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 0.5rem;
+}
+
 .tietopankki-card:hover { border-color: #E8C84A; }
 .tietopankki-card h3 { font-size: 1.05rem; margin-bottom: 0.6rem; }
 .tietopankki-card p { font-size: 0.9rem; color: #F5DFA0; margin: 0; line-height: 1.6; }
