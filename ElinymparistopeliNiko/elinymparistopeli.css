@@ -21,7 +21,7 @@ body {
 #kalat,
 #elinymparistot {
     display: grid;
-    gap: 10px;
+    gap: 40px;
 }
 
 button {
