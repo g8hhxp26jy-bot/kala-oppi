@@ -77,3 +77,20 @@ document.getElementById("guess").addEventListener("keydown", function (e) {
 });
 
 newWord();
+
+function restartGame() {
+  score = 0;
+  wordIndex = 0;
+
+  // Sekoitetaan sanat uudelleen
+  wordList = [...fishWords].sort(() => Math.random() - 0.5);
+
+  // Päivitetään UI
+  document.getElementById("score").textContent = "Pisteet: 0 / 12";
+  document.getElementById("message").textContent = "";
+  document.getElementById("guess").value = "";
+
+  newWord(); // aloittaa pelin alusta
+}
+
+document.getElementById("restartBtn").addEventListener("click", restartGame);
