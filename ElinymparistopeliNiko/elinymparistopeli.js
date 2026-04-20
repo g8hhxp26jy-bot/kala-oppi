@@ -22,12 +22,28 @@ var valittuKala = null;
 var pisteet = 0;
 var loydetyt = [];
 
+function sekoita(lista) {
+    var kopio = lista.slice();
+
+    for (var i = kopio.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var valiaikainen = kopio[i];
+        kopio[i] = kopio[j];
+        kopio[j] = valiaikainen;
+    }
+
+    return kopio;
+}
+
 function piirra() {
     kalatDiv.innerHTML = "";
     elinymparistotDiv.innerHTML = "";
 
-    for (var i = 0; i < kalat.length; i++) {
-        var kala = kalat[i];
+    var sekoitetutKalat = sekoita(kalat);
+    var sekoitetutElinymparistot = sekoita(elinymparistot);
+
+    for (var i = 0; i < sekoitetutKalat.length; i++) {
+        var kala = sekoitetutKalat[i];
         var nappi = document.createElement("button");
         nappi.textContent = kala.nimi;
 
@@ -51,8 +67,8 @@ function piirra() {
         kalatDiv.appendChild(nappi);
     }
 
-    for (var j = 0; j < elinymparistot.length; j++) {
-        var paikka = elinymparistot[j];
+    for (var j = 0; j < sekoitetutElinymparistot.length; j++) {
+        var paikka = sekoitetutElinymparistot[j];
         var nappi = document.createElement("button");
         nappi.textContent = paikka;
 
