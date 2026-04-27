@@ -39,7 +39,7 @@ h1, h2, h3 {
 }
 
 .nav-dropdown {
-    position: absolute;
+    position: left;
     top: calc(100% + 1rem);
     right: 0;
     background-color: #0B3D2E;
