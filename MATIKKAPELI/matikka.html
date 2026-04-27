@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalakymppi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./jaakkon peli.css">
+  <script src="./jaakonpeli.js" defer></script>
+</head>
+<body>
+
+  <div id="gameBox">
+    <h1>🎣 Kalakymppi</h1>
+    <p class="subtitle">Laske kalat ja kirjoita vastaus!</p>
+
+    <div id="levelText">Taso 1 / 10</div>
+
+    <div id="fishArea"></div>
+
+    <div id="feedback"></div>
+
+    <input type="number" id="answerInput" placeholder="?">
+    <br>
+    <button onclick="checkAnswer()">Tarkista</button>
+    <button id="nextBtn" onclick="nextLevel()">Seuraava taso →</button>
+
+    <div id="triesInfo"></div>
+
+    <div id="winScreen">
+      <h2>🎉 Mahtavaa!</h2>
+      <p>Läpäisit kaikki 10 tasoa!</p>
+      <button onclick="restartGame()">Pelaa uudelleen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

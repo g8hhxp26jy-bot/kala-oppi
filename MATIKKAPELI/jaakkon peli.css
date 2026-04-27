@@ -1,0 +1,157 @@
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  background-color: #1a3a1a;
+  background-image:
+    radial-gradient(ellipse at top, #2a5a2a 0%, #1a3a1a 60%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#gameBox {
+  background-color: #1e4a1e;
+  border: 4px solid #c8a010;
+  border-radius: 16px;
+  padding: 36px 40px;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(200, 160, 16, 0.3), 0 8px 24px rgba(0,0,0,0.6);
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  color: #e8b820;
+  font-size: 2.2rem;
+  margin-bottom: 4px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: #a8c890;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+#levelText {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e8b820;
+  background-color: #163316;
+  border: 2px solid #c8a010;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 6px 20px;
+  margin-bottom: 20px;
+}
+
+#fishArea {
+  background-color: #163316;
+  border: 2px solid #4a7a3a;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 2rem;
+  min-height: 80px;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+#fishArea b {
+  color: #e8b820;
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  margin: 0 8px;
+}
+
+#feedback {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  min-height: 28px;
+  margin-bottom: 12px;
+  color: #a8c890;
+}
+
+#answerInput {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  width: 100px;
+  text-align: center;
+  padding: 8px;
+  border: 2px solid #c8a010;
+  border-radius: 8px;
+  background-color: #163316;
+  color: #e8b820;
+  margin-bottom: 14px;
+  outline: none;
+}
+
+#answerInput:focus {
+  border-color: #f0d040;
+  background-color: #1e4a1e;
+}
+
+button {
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem;
+  padding: 10px 22px;
+  margin: 4px;
+  border: 2px solid #c8a010;
+  border-radius: 8px;
+  background-color: #c8a010;
+  color: #1a3a1a;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+  background-color: #f0d040;
+  border-color: #f0d040;
+}
+
+#nextBtn {
+  display: none;
+  background-color: #2e7a2e;
+  border-color: #4aaa4a;
+  color: #e8f8e8;
+}
+
+#nextBtn:hover {
+  background-color: #3a9a3a;
+}
+
+#triesInfo {
+  color: #7aaa6a;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+
+#winScreen {
+  display: none;
+  margin-top: 24px;
+  background-color: #163316;
+  border: 2px solid #c8a010;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+#winScreen h2 {
+  font-family: 'Cinzel', serif;
+  color: #e8b820;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+#winScreen p {
+  color: #a8c890;
+  margin-bottom: 16px;
+}
